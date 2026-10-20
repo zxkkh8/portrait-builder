@@ -1,62 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portrait Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Portrait Studio</title>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="navbar">
+<header class="header">
 
-    <div class="logo">
-        Portrait Studio
+    <div class="container nav">
+
+        <div class="logo">
+            Portrait Studio
+        </div>
+
+        <nav>
+            <a href="#">Features</a>
+            <a href="#">Templates</a>
+            <a href="#">Pricing</a>
+            <a href="#">Gallery</a>
+        </nav>
+
+        <button class="signin-btn">
+            Sign In
+        </button>
+
     </div>
-
-    <nav>
-        <a href="#">Features</a>
-        <a href="#">Templates</a>
-        <a href="#">Pricing</a>
-        <a href="#">Gallery</a>
-    </nav>
-
-    <button class="nav-btn">
-        Sign In
-    </button>
 
 </header>
 
 <section class="hero">
 
-    <div class="hero-content">
-        <span class="badge">
-            Roblox Portrait Creator
-        </span>
+    <div class="container hero-grid">
 
-        <h1>
-            Create Professional Roblox Portraits
-        </h1>
+        <div>
 
-        <p>
-            Generate beautiful character portraits, profile cards,
-            thumbnails and creator artwork in seconds.
-        </p>
+            <span class="tag">
+                Roblox Portrait Creator
+            </span>
 
-        <div class="hero-actions">
+            <h1>
+                Create Stunning Roblox Character Portraits
+            </h1>
 
-            <button class="primary-btn">
-                Start Building
-            </button>
+            <p>
+                Build premium Roblox avatars, profile pictures,
+                thumbnails, group art and showcase images
+                with studio-quality effects.
+            </p>
 
-            <button class="secondary-btn">
-                View Examples
-            </button>
+            <div class="hero-buttons">
+
+                <button class="primary-btn">
+                    Start Creating
+                </button>
+
+                <button class="secondary-btn">
+                    View Examples
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="portrait-preview">
+
+                <img
+                src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-420A420/ffffffffffffffffffffffffffffffff/Png/noFilter"
+                id="avatar">
+
+                <h2 id="displayName">
+                    Builderman
+                </h2>
+
+                <p>Professional Creator Card</p>
+
+            </div>
 
         </div>
 
@@ -64,74 +95,81 @@
 
 </section>
 
-<section class="stats">
+<section class="stats container">
 
-    <div class="stat-card">
+    <div class="stat">
         <h2>10M+</h2>
-        <p>Portraits Generated</p>
+        <p>Portraits Created</p>
     </div>
 
-    <div class="stat-card">
+    <div class="stat">
         <h2>500K+</h2>
-        <p>Creators</p>
+        <p>Users</p>
     </div>
 
-    <div class="stat-card">
+    <div class="stat">
         <h2>4.9★</h2>
         <p>User Rating</p>
     </div>
 
 </section>
 
-<section class="builder">
+<section class="editor container">
 
-    <div class="controls">
+    <div class="panel">
 
-        <h2>Editor</h2>
+        <h2>Portrait Builder</h2>
 
         <label>Username</label>
 
         <input
-            id="username"
-            placeholder="Builderman">
+        type="text"
+        id="username"
+        placeholder="Builderman">
 
         <label>Background</label>
 
         <select id="background">
-            <option value="blue">Studio Blue</option>
-            <option value="purple">Royal Purple</option>
-            <option value="gold">Premium Gold</option>
-            <option value="dark">Dark Mode</option>
+
+            <option value="blue">
+                Studio Blue
+            </option>
+
+            <option value="purple">
+                Royal Purple
+            </option>
+
+            <option value="gold">
+                Premium Gold
+            </option>
+
+            <option value="dark">
+                Dark Mode
+            </option>
+
         </select>
 
-        <label>Frame</label>
-
-        <select id="frame">
-            <option>Classic</option>
-            <option>Gold</option>
-            <option>Diamond</option>
-        </select>
-
-        <button id="generateBtn">
+        <button id="generate">
             Generate Portrait
         </button>
 
     </div>
 
-    <div class="preview">
+    <div class="canvas">
 
-        <div id="portraitCard" class="portrait-card blue">
+        <div class="portrait-card blue" id="portraitCard">
 
             <img
-                id="avatar"
-                src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-420A420/ffffffffffffffffffffffffffffffff/Png/noFilter"
-                alt="avatar">
+            src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-420A420/ffffffffffffffffffffffffffffffff/Png/noFilter"
+            id="canvasAvatar">
 
-            <h3 id="displayName">
+            <h2 id="canvasName">
                 Builderman
-            </h3>
+            </h2>
 
-            <p>Roblox Creator</p>
+            <span>
+                Roblox Creator
+            </span>
 
         </div>
 
@@ -139,7 +177,7 @@
 
 </section>
 
-<script src="app.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
