@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Portrait Studio
+    </div>
+
+    <nav>
+        <a href="#">Features</a>
+        <a href="#">Templates</a>
+        <a href="#">Pricing</a>
+        <a href="#">Gallery</a>
+    </nav>
+
+    <button class="nav-btn">
+        Sign In
+    </button>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <span class="badge">
+            Roblox Portrait Creator
+        </span>
+
+        <h1>
+            Create Professional Roblox Portraits
+        </h1>
+
+        <p>
+            Generate beautiful character portraits, profile cards,
+            thumbnails and creator artwork in seconds.
+        </p>
+
+        <div class="hero-actions">
+
+            <button class="primary-btn">
+                Start Building
+            </button>
+
+            <button class="secondary-btn">
+                View Examples
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h2>10M+</h2>
+        <p>Portraits Generated</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>500K+</h2>
+        <p>Creators</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>4.9★</h2>
+        <p>User Rating</p>
+    </div>
+
+</section>
+
+<section class="builder">
+
+    <div class="controls">
+
+        <h2>Editor</h2>
+
+        <label>Username</label>
+
+        <input
+            id="username"
+            placeholder="Builderman">
+
+        <label>Background</label>
+
+        <select id="background">
+            <option value="blue">Studio Blue</option>
+            <option value="purple">Royal Purple</option>
+            <option value="gold">Premium Gold</option>
+            <option value="dark">Dark Mode</option>
+        </select>
+
+        <label>Frame</label>
+
+        <select id="frame">
+            <option>Classic</option>
+            <option>Gold</option>
+            <option>Diamond</option>
+        </select>
+
+        <button id="generateBtn">
+            Generate Portrait
+        </button>
+
+    </div>
+
+    <div class="preview">
+
+        <div id="portraitCard" class="portrait-card blue">
+
+            <img
+                id="avatar"
+                src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-420A420/ffffffffffffffffffffffffffffffff/Png/noFilter"
+                alt="avatar">
+
+            <h3 id="displayName">
+                Builderman
+            </h3>
+
+            <p>Roblox Creator</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
